@@ -1,0 +1,6 @@
+{
+  "name": "24/7 Live Website Monitor",
+  "description": "A 24/7 live website uptime monitor and keep-alive service that pings and resets your websites every 2 minutes or custom intervals even when you are offline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

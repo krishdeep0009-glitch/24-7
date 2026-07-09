@@ -1,0 +1,142 @@
+[
+  {
+    "id": "demo-self",
+    "name": "Self Keep-Alive / Monitor",
+    "url": "https://ais-dev-s5nrl7onwibqrijh33wmf5-627713442079.asia-east1.run.app",
+    "interval": 120000,
+    "isActive": true,
+    "method": "GET",
+    "headers": [
+      {
+        "key": "User-Agent",
+        "value": "UptimeMonitor24-7/1.0"
+      }
+    ],
+    "timeout": 10000,
+    "status": "online",
+    "uptimePercentage": 100,
+    "totalChecks": 1,
+    "successfulChecks": 1,
+    "createdAt": "2026-07-09T11:26:15.485Z"
+  },
+  {
+    "id": "dracohost-panel",
+    "name": "DracoHost Panel",
+    "url": "https://panel.dracohost.qzz.io/",
+    "interval": 120000,
+    "isActive": true,
+    "method": "GET",
+    "headers": [
+      {
+        "key": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
+      },
+      {
+        "key": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml"
+      }
+    ],
+    "timeout": 10000,
+    "status": "pending",
+    "uptimePercentage": 100,
+    "totalChecks": 0,
+    "successfulChecks": 0,
+    "createdAt": "2026-07-09T12:15:00.000Z"
+  },
+  {
+    "id": "csb-nz2255-port3000-preview",
+    "name": "CodeSandbox nz2255 - Port 3000 Preview",
+    "url": "https://nz2255-3000.preview.csb.app",
+    "interval": 120000,
+    "isActive": true,
+    "method": "GET",
+    "headers": [
+      {
+        "key": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
+      },
+      {
+        "key": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml"
+      }
+    ],
+    "timeout": 10000,
+    "status": "pending",
+    "uptimePercentage": 100,
+    "totalChecks": 0,
+    "successfulChecks": 0,
+    "createdAt": "2026-07-09T12:15:00.000Z"
+  },
+  {
+    "id": "csb-nz2255-port3000",
+    "name": "CodeSandbox nz2255 - Port 3000",
+    "url": "https://nz2255-3000.csb.app",
+    "interval": 120000,
+    "isActive": true,
+    "method": "GET",
+    "headers": [
+      {
+        "key": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
+      },
+      {
+        "key": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml"
+      }
+    ],
+    "timeout": 10000,
+    "status": "pending",
+    "uptimePercentage": 100,
+    "totalChecks": 0,
+    "successfulChecks": 0,
+    "createdAt": "2026-07-09T12:15:00.000Z"
+  },
+  {
+    "id": "csb-nz2255-standard",
+    "name": "CodeSandbox nz2255 - Standard App",
+    "url": "https://nz2255.csb.app",
+    "interval": 120000,
+    "isActive": true,
+    "method": "GET",
+    "headers": [
+      {
+        "key": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
+      },
+      {
+        "key": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml"
+      }
+    ],
+    "timeout": 10000,
+    "status": "pending",
+    "uptimePercentage": 100,
+    "totalChecks": 0,
+    "successfulChecks": 0,
+    "createdAt": "2026-07-09T12:15:00.000Z"
+  },
+  {
+    "id": "csb-nz2255-standard-preview",
+    "name": "CodeSandbox nz2255 - Standard Preview",
+    "url": "https://nz2255.preview.csb.app",
+    "interval": 120000,
+    "isActive": true,
+    "method": "GET",
+    "headers": [
+      {
+        "key": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
+      },
+      {
+        "key": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml"
+      }
+    ],
+    "timeout": 10000,
+    "status": "pending",
+    "uptimePercentage": 100,
+    "totalChecks": 0,
+    "successfulChecks": 0,
+    "createdAt": "2026-07-09T12:15:00.000Z"
+  }
+]
