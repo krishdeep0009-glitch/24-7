@@ -37,13 +37,23 @@ else
 fi
 
 # Check for Node.js
+WAS_UPGRADED=false
 if ! command -v node &> /dev/null; then
     echo -e "${YELLOW}⚠️ Node.js is not installed. Installing Node.js LTS (v20)...${NC}"
     curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
     sudo apt install -y nodejs
 else
     NODE_VERSION=$(node -v)
-    echo -e "${GREEN}✓ Node.js is installed (${NODE_VERSION}).${NC}"
+    NODE_MAJOR=$(echo "$NODE_VERSION" | cut -d'v' -f2 | cut -d'.' -f1)
+    if [ "$NODE_MAJOR" -lt 18 ]; then
+        echo -e "${YELLOW}⚠️ Node.js version is too old (${NODE_VERSION}). Node.js v18+ is required.${NC}"
+        echo -e "${CYAN}Upgrading Node.js to LTS (v20)...${NC}"
+        curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+        sudo apt install -y nodejs
+        WAS_UPGRADED=true
+    else
+        echo -e "${GREEN}✓ Node.js is installed and compatible (${NODE_VERSION}).${NC}"
+    fi
 fi
 
 # Check for NPM
@@ -77,6 +87,10 @@ fi
 
 # --- 3. INSTALL DEPENDENCIES ---
 echo -e "\n${BLUE}[3/5] Installing Project Dependencies...${NC}"
+if [ "$WAS_UPGRADED" = true ]; then
+    echo -e "${YELLOW}🧹 Node.js was upgraded. Clearing old node_modules to avoid compilation conflicts...${NC}"
+    rm -rf node_modules package-lock.json
+fi
 npm install
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Error: Dependency installation failed! Check logs above.${NC}"
